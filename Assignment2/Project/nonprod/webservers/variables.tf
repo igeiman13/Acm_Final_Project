@@ -4,7 +4,7 @@ variable "instance_type" {
     "prod"    = "t2.micro"
     "nonprod" = "t2.micro"
   }
-  description = "Type of the instance"
+  description = "Types of the instance"
   type        = map(string)
 }
 
@@ -25,12 +25,12 @@ variable "ec2_count" {
 variable "my_private_ip" {
   type        = string
   default     = "172.31.43.189"
-  description = "Private IP of my Cloud 9 station to be opened in bastion ingress"
+  description = "Private IP of my Cloud 9 station to be opened in bastion ingress file"
 }
 
 # curl http://169.254.169.254/latest/meta-data/public-ipv4
 variable "my_public_ip" {
   type        = string
   default     = "54.211.83.92"
-  description = "Public IP of my Cloud 9 station to be opened in bastion ingress"
+  description = "Public IP of my Cloud 9 station to be opened in bastion ingress file"
 }
